@@ -36,7 +36,20 @@ dataArray.push(q1,q2,q3,q4,q5);
 console.log(dataArray);
 
 const showAnswers = ()=>{
-    console.log(submitArray);
+
+     marks=0;
+
+    for(let x=0;x<submitArray.length;x++){
+         let selectedQ = dataArray[x];
+         let selectedA = submitArray[x];
+         let da = selectedQ.answer.find(d=>d.id == selectedA.answer);
+         console.log(da);
+         
+         if(da.state){
+            marks++;
+         }
+    }
+    $('#txt-answer').val('Result'+marks+'/5');
     
 }
 
