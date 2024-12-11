@@ -43,13 +43,13 @@ const showAnswers = ()=>{
          let selectedQ = dataArray[x];
          let selectedA = submitArray[x];
          let da = selectedQ.answer.find(d=>d.id == selectedA.answer);
-         console.log(da);
          
-         if(da.state){
+         if(da && da.state){
             marks++;
          }
     }
-    $('#txt-answer').val('Result'+marks+'/5');
+    $('#txt-answer').val('Marks : '+marks+'/5');
+   
     
 }
 
@@ -72,7 +72,7 @@ const verifyAnswer=(State)=>{
         $('#txt-time').val('00:00');
         $('#answer-list').empty();
         $('#question').val('');
-
+        
         showAnswers();
         return;
     }
@@ -115,7 +115,8 @@ const displayQuiz =()=>{
 }
 
 const start = ()=>{
-    $('#start-button').prop('disabled',true)
+    $('#start-button').prop('disabled',true);
+    $('#txt-answer').val('Marks : ');
     submitArray=[];
     displayQuiz();
 }
