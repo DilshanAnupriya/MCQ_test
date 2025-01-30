@@ -11,8 +11,8 @@ This repository contains a dynamic Multiple-Choice Question (MCQ) Test applicati
 
 🛠 Tech Stack:
 Frontend: HTML, CSS, JavaScript
-Logic Handling: Vanilla JavaScript
+Logic Handling:  JavaScript
 Data Storage: JSON / Local Storage (Optional)
 This project is perfect for students, educators, and developers looking to create an interactive quiz system. Contributions and feedback are always welcome!
 
-🔗 GitHub Repository: [Your GitHub Link]
+🔗 GitHub Repository: []
